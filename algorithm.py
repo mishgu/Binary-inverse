@@ -40,29 +40,5 @@ def binary_inverse (list_bits):
             i+=1
         result_list = result_list[::-1]
         print " Input data\t{0}\n Desimal value\t{1}\n Invale value\t{2}\n Output date\t{3}\n".format(list_bits, decimal_value, decimal_value*(-1),result_list)
-        decimal_value = 0
-        i=0
-        for el in result_list:
-            decimal_value += el*(-2)**i
-            i+=1
-        print decimal_value
-                
-#test1
-binary_inverse([1, 0, 0, 1])
-#test2
-binary_inverse([0,1,0,0,1])
-#test3
-binary_inverse([0, 1, 1, 0, 1, 1])
-#test4
-binary_inverse([1, 1, 0, 1, 1])
-#test5
-binary_inverse([1, 1, 1, 0, 0, 1, 1])
-#test6
-binary_inverse([1, 0, 1, 1, 0, 1])
-#test7
-binary_inverse([1,1, 1,1])
-#test8
-binary_inverse([1,1, 1,1,1,1,1])
-#test9
-binary_inverse([1,0, 1,1,1,0,1])
+        return result_list
 
